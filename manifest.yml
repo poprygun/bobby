@@ -1,0 +1,16 @@
+---
+applications:
+- name: bobby
+  host: bobby
+  path: target/bobby.jar
+  env:
+    io.pivotal.mq.host: localhost
+    io.pivotal.mq.port: 1414
+    io.pivotal.mq.queue-manager: QM1
+    io.pivotal.mq.channel: QC1
+    io.pivotal.mq.incoming-queue: Q1
+    io.pivotal.mq.cluster: "localhost(1414),localhost(1414),localhost(1414)"
+    io.pivotal.mq.cluster-urls:
+      - "localhost:1414"
+      - "localhost:1414"
+      - "localhost:1414"
